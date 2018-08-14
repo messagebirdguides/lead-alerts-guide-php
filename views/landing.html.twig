@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<h4>Leave your number here all talk to a sales agent within 5 minutes, guaranteed!</h4>
+<div class="callback-form">
+    {% if error %}
+        <p><strong>{{error}}</strong></p>
+    {% endif %}
+    <form action="/callme" method="post">
+        <div>
+            <label>Your name:</label>
+            <br />
+            <input type="text" name="name" value="{{name}}" />
+        </div>
+        <div>
+            <label>Your phone number:</label>
+            <br />
+            <input type="tel" name="number" value="{{number}}" />
+        </div>
+        <div>
+            <button type="submit">Call me</button>
+        </div>        
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>M.B. Cars</title>
+        <style type="text/css">
+            body {
+                background-color:#004400;
+                color:#fff;
+                text-align:center;
+                font-family:sans-serif;
+            }
+            div {
+                padding:5px;
+            }
+            div.callback-form {
+                border:solid 2px #fff;                
+                margin:auto;
+                width:60%;
+            }
+            button {
+                color:#fff;
+                background-color:#004400;
+                border:solid 2px #fff;
+                padding:5px;
+                font-size:1.2em;
+            }
+            a {
+                color:#fff !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>M.B. Cars 🚙</h1>
+        <h2>Largest Car Dealership in Town!</h2>
+        <h3>We buy &amp; sell all international brands.</h3>
+        {% block content %}
+        {% endblock %}
+        <p><small>A sample application brought to you by <a href="https://developers.messagebird.com/">MessageBird</a> :)</small></p>
+    </body>
+</html>
